@@ -1,0 +1,110 @@
+form label {
+    font-size: 1em;
+}
+
+form input {
+    width: 100%;
+    padding: 6px 12px;
+    margin: 4px 0;
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+/* This is our style for the invalid fields */
+input:invalid{
+    border-color: #900;
+    background-color: #FDD;
+}
+
+input:focus:invalid {
+    outline: none;
+}
+
+/* This is the style of our error messages */
+.error {
+    width  : 100%;
+    padding: 0;
+
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.error.active {
+    padding: 0.3em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+#shoe_name, #cost {
+    display: inline;
+}
+
+#shoe_size_dropdown_button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 64px 16px 64px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#shoe_size_drop_down {
+    position: relative;
+    display: inline-block;
+}
+
+#shoe_size_drop_down a:hover {background-color: #f1f1f1}
+
+#shoe_size_dropdown_items {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#shoe_size_dropdown_items a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#addToCartButton {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 16px 64px 16px 64px;
+    font-size: 16px;
+}
+
+.show {display:block;}
